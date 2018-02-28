@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.App-logo {
+  height: 20px;
+}
+
+#mainNavBar {
+  height: 50px;
+}
+
+.navBarHide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 3s linear 300ms, opacity 300ms;
+}
+
+.navBarShow {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 300ms linear 300ms, opacity 300ms;
+}
+
+.no-padding {
+  padding:0px;
+}
+
+.menutop {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+#containerPost {
+  background-color: #ffffff;
+  margin:380px auto;
+  width: 85%;
+  text-align: left;
+  //Round border top
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  //Round border bottom
+  -webkit-border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  //Set the transition, for the width change
+  transition: width 0.5s ease-in-out;
+}
+
+#containerSmallPost {
+  margin-top:-60px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.row.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  #mainNavBar {
+    height: 25px;
+    min-height: 40px;
+  }
+
+  .App-logo {
+    height: 10px;
+  }
+
+  #MainGrid {
+    margin-top: 35%;
+  }
+
+  .menutop {
+    display: none;
+  }
+
+  .react-parallax {
+    margin-top:40px;
+  }
+}

@@ -1,0 +1,63 @@
+.bigPost {
+  text-align: left;
+  padding:20px;
+  display: inline-block;
+}
+
+.bigPost h1 {
+  font-size: 10pt;
+}
+
+.bigPost h2 {
+  font-family: 'Open Sans';
+  font-size: 16pt;
+  letter-spacing: 1pt;
+  line-height: 19pt;
+  font-weight: bold;
+}
+
+.bigPost p {
+  font-size: 12pt;
+}
+
+.bigPost .imgAuthor {
+  color:#c6c6c6;
+}
+
+.bigPost .imgAuthor img {
+  margin-right: 20px;
+}
+
+.bigPost .container-fluid {
+  padding: 0px;
+}
+
+.bigPost .show-grid{
+  padding: 0px;
+}
+
+.bigPost .listimages .row.row-eq-height {
+  height: 100%;
+}
+
+.bigPost .listimages .row.row-eq-height > * {
+  padding: 0px;
+}
+
+.bigPost .listimages .row.half-height   {
+  height: 50%;
+  margin: 0px 10px;
+}
+
+.bigPost .listimages .row.half-height > * {
+  padding: 0px;
+  bottom:0px;
+}
+
+.bigPost .listimages .row.half-height:nth-child(2) img {
+  bottom: 0px;
+}
+
+.bigPost .colimage {
+  padding: 0px;
+}

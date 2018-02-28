@@ -1,0 +1,39 @@
+
+#LightBoxPost .modal-body {
+  padding: 0px;
+}
+
+#LightBoxPost .modal-header {
+  background-color: #f8e627;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 0px;
+}
+
+#LightBoxPost .modal-footer {
+  border-top: 0px;
+}
+
+#LightBoxPost .subheading {
+  background-color: #f8e627;
+  padding: 1px 80px 25px;
+  min-height: 160px;
+}
+
+#LightBoxPost .listimages {
+  padding: 50px 0px 50px 50px;
+  height: 200px;
+}
+
+#LightBoxPost .listimages div {
+  float: left;
+  padding-right: 10px;
+}
+
+#LightBoxPost .listimages img {
+  height: 120px;
+}
