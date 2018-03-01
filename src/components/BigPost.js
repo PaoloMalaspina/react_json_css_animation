@@ -79,9 +79,8 @@ class BigPost extends Component {
             </tr>
           </tbody>
         </Table>
-        <Row className="show-grid row-eq-height">
-          <Grid fluid className="listimages">
-
+        <Grid fluid>
+          <Row >
             {
               arrImages.map(function(V, K){
                   //Test type of object V
@@ -91,18 +90,18 @@ class BigPost extends Component {
                     * Cycle the array and save the interface part in the returnscolS variable
                     */
                     let returnedcOLS = V.map(function(V1, K1){
-                      return <Row key={"imgRowSmall"+ K1} className="half-height"><Col xs={12} className="colimage"><Image key={'img' + V1.id + K1} src={V1.url} alt={V1.type} responsive rounded/></Col></Row>
+                      return <Col className="small_image" key={'img_small' + V1.id + K1}><Image key={'img' + V1.id + K1} src={V1.url} alt={V1.type} rounded/></Col>
                     })
                     //Return interface part
-                    return <Col xs={3} key={"imgSmall"+ K}>{returnedcOLS}</Col>
+                    return <Col xs={4} sm={2} key={"imgSmall"+ K}><Row className="small_container" key={"imgRowSmall"+ K}>{returnedcOLS}</Row></Col>
                   } else {
                     //The element is an object, which contains the large image
-                   return <Col xs={3} key={"imgBig"+ K} className="colimage"><Image key={'img' + V.id + K} src={V.url} alt={V.type} responsive rounded /></Col>
+                   return <Col xs={8} sm={4} key={"imgBig"+ K}><Image key={'img' + V.id + K} src={V.url} alt={V.type}  rounded responsive/></Col>
                   }
               })
             }
-          </Grid>
-        </Row>
+          </Row>
+        </Grid>
       </div>
     );
   }

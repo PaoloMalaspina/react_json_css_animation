@@ -7,6 +7,7 @@ import { Parallax } from 'react-parallax';
 import Grid  from 'react-bootstrap/lib/Grid';
 import Row  from 'react-bootstrap/lib/Row';
 import Col  from 'react-bootstrap/lib/Col';
+
 /* app components*/
 import AppNavBar from './components/AppNavBar';
 import BigPost  from './components/BigPost';
@@ -96,7 +97,7 @@ class App extends Component {
           <div id="containerPost" >
             <Grid fluid className="grid">
               <Row className="gridrow">
-                <Col xs={7}>
+                <Col xs={12} sm={7}>
                   {
                    bigPost.map(function(object, i){
                      if (typeof object !== "undefined") {
@@ -106,7 +107,7 @@ class App extends Component {
                     }
                   })}
                 </Col>
-                <Col xs={4} xsOffset={1}>
+                <Col xs={12} sm={4} smOffset={1}>
                 <Grid id="containerSmallPost">
                   {
                   smallPost.map(function(object, i){
@@ -127,6 +128,7 @@ class App extends Component {
                 </Col>
               </Row>
             </Grid>
+
           </div>
         </Parallax>
         <LightBoxPost show={this.state.datasForLightBoxPost!==null} id="LightBoxPost" datas={this.state.datasForLightBoxPost} onHide={hideLightBoxPost} />
