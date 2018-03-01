@@ -36,6 +36,7 @@
 #containerPost {
   background-color: #ffffff;
   margin:380px auto;
+  padding: 20px 60px;
   width: 85%;
   text-align: left;
   //Round border top
@@ -56,6 +57,10 @@
   transition: width 0.5s ease-in-out;
 }
 
+#containerPost .gridrow {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 #containerSmallPost {
   margin-top:-60px;
 }

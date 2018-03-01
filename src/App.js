@@ -94,9 +94,9 @@ class App extends Component {
         <AppNavBar id="mainNavBar" className={this.state.navBarHide ? "navBarHide" : "navBarShow"} logo={logo} />
         <Parallax bgImage={require('./cover.png')} bgWidth="100%" bgHeight="auto" bgClassName="cover" bgImageAlt="Cover" strength={200}>
           <div id="containerPost" >
-            <Grid fluid>
-              <Row>
-                <Col xs={8}>
+            <Grid fluid className="grid">
+              <Row className="gridrow">
+                <Col xs={7}>
                   {
                    bigPost.map(function(object, i){
                      if (typeof object !== "undefined") {
@@ -106,7 +106,7 @@ class App extends Component {
                     }
                   })}
                 </Col>
-                <Col xs={4}>
+                <Col xs={4} xsOffset={1}>
                 <Grid id="containerSmallPost">
                   {
                   smallPost.map(function(object, i){

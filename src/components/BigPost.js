@@ -94,10 +94,10 @@ class BigPost extends Component {
                       return <Row key={"imgRowSmall"+ K1} className="half-height"><Col xs={12} className="colimage"><Image key={'img' + V1.id + K1} src={V1.url} alt={V1.type} responsive rounded/></Col></Row>
                     })
                     //Return interface part
-                    return <Col xs={2} key={"imgSmall"+ K}>{returnedcOLS}</Col>
+                    return <Col xs={3} key={"imgSmall"+ K}>{returnedcOLS}</Col>
                   } else {
                     //The element is an object, which contains the large image
-                   return <Col xs={4} key={"imgBig"+ K} className="colimage"><Image key={'img' + V.id + K} src={V.url} alt={V.type} responsive rounded /></Col>
+                   return <Col xs={3} key={"imgBig"+ K} className="colimage"><Image key={'img' + V.id + K} src={V.url} alt={V.type} responsive rounded /></Col>
                   }
               })
             }

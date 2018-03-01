@@ -1,6 +1,6 @@
 .bigPost {
   text-align: left;
-  padding:20px;
+  padding:p0px;
   display: inline-block;
 }
 
@@ -10,14 +10,15 @@
 
 .bigPost h2 {
   font-family: 'Open Sans';
-  font-size: 16pt;
+  font-size: 24pt;
   letter-spacing: 1pt;
-  line-height: 19pt;
+  line-height: 26pt;
   font-weight: bold;
 }
 
 .bigPost p {
   font-size: 12pt;
+  color: #888888;
 }
 
 .bigPost .imgAuthor {
@@ -28,9 +29,9 @@
   margin-right: 20px;
 }
 
-.bigPost .container-fluid {
+/*.bigPost .container-fluid {
   padding: 0px;
-}
+}*/
 
 .bigPost .show-grid{
   padding: 0px;
